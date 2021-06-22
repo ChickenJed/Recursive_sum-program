@@ -1,2 +1,18 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+#include <iostream>
+
+int recursive_sum(int num)
+{
+	if (num <= 0)
+		return 0;
+
+	if (num != 0)
+		return num + recursive_sum(num - 1);
+}
+int main()
+{
+	int example = 3;
+	std::cout<< recursive_sum(example);
+	return 0;
+}
